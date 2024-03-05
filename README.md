@@ -1,5 +1,21 @@
 # Python-For-AI
+```mermaid
+    flowchart RL
 
+    K(Why Learn Python)
+    A((Python))
+    B(Data Science)--->A
+    C(Data Analysys)--->A
+    D(AI AIartificial  intelligence)--->A
+    E(ML Machine Learning)--->A
+    F(Web Development)--->A
+    G(Game Development)--->A
+    H(Software Development)--->A
+    I(Ethical Hacking)--->A
+    J(Networking)--->A
+
+
+```
 ### Python Basics
 1. Introduction Of Python And Comparison With Other Programming 1. Language
 1. Python Objects, Number & Booleans, Strings.
