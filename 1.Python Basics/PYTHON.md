@@ -45,4 +45,6 @@ Interpeter: The code written in python is executed line  by line.
 #### How Learn  Python ?
  1. Install Python
  1. IDE Setup
+ 1. jupyter notebook
+ 1. Google Colab
  1. Start with Basics
