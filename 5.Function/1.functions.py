@@ -109,7 +109,7 @@ def sum_numbers(*args):
         sum+=num
         return sum
     
-print(sum_numbers(1,2,3,4,5,6))
+# print(sum_numbers(1,2,3,4,5,6))
 '''
 output:
 <class 'tuple'>
@@ -124,7 +124,7 @@ def fn(a,b,*args):
     print(args)
     print(*args)
 
-fn(5,6,7,8,9)
+# fn(5,6,7,8,9)
 '''
 output:
 5
@@ -133,5 +133,34 @@ output:
 7 8 9
 '''
 
-# Args should be last paraater
-# video 29min
+def fn2(*args,a,b):
+    print(a)
+    print(b)
+    print(args)
+    print(*args)
+
+# fn2(5,6,7,a=8,b=9)
+'''
+output:
+8
+9
+(5, 6, 7)
+5 6 7
+'''
+
+
+def display_info(**kwargs):
+    print(type(kwargs))
+    print(kwargs)
+
+    for key,value in kwargs.items():
+        print(key, '->', value)
+
+display_info(name="Nabin",age=99)
+'''
+Output:
+<class 'dict'>
+{'name': 'Nabin', 'age': 99}
+name -> Nabin
+age -> 99
+'''
