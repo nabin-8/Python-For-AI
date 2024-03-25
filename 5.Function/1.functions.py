@@ -156,7 +156,7 @@ def display_info(**kwargs):
     for key,value in kwargs.items():
         print(key, '->', value)
 
-display_info(name="Nabin",age=99)
+# display_info(name="Nabin",age=99)
 '''
 Output:
 <class 'dict'>
@@ -164,3 +164,35 @@ Output:
 name -> Nabin
 age -> 99
 '''
+
+# def func1(**kwargs, a,b):
+#     print(kwargs)
+#     print(a)
+#     print(b)
+
+# func1(name="Nabin",age=99)
+'''
+Output:
+kwargs should be the last parameter
+'''
+
+#strict dataType
+
+def add_numbers(a:int,b:int):
+    return a+b
+
+# print(add_numbers(10,20)) #30
+# # print(add_numbers(10,'20')) #error
+# print(add_numbers(10,20.55)) #30.55
+
+#function nesting
+def outer():
+    print("Hellow from Outer")
+
+    def inner():
+        print("Hellow from Inner")
+    
+    return inner
+
+fn=outer()
+outer()()
